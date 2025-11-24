@@ -1,0 +1,165 @@
+body {
+    background-image: url(./img/24hour.jpg);
+}
+header {
+    padding: 15px 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(84, 221, 255, 0.521);
+}
+.slide{
+    text-align: center;
+}
+
+.headerleft img {
+    width: 100px; 
+    height: 100px;
+    padding-left: 10px;
+}
+
+.headermiddle h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.headernav nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.headernav nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+.headernav nav ul li a {
+   
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 5px;
+    padding: 5px 10px;
+    transition: 0.2s;
+    /* transition: color 0.3s ease;  */
+}
+
+/* .headernav nav ul li a::after{
+    content: "";
+    position: absolute;
+    background-color: #ffc107;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+    
+
+} */
+
+.headernav nav ul li a:hover {
+    color:yellow;
+    /* text-decoration:underline; */
+    width:  100%;
+    transition: 1s;
+    transform: matrix3d(1,1);
+    
+}
+
+.active{
+    color: #000000;
+    background-color: skyblue;
+    border-radius: 2px;
+    
+    
+}
+
+.userprofile img {
+    width: 40px;
+    height: 40px; 
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+   
+}
+
+.userprofile span {
+    vertical-align: middle;
+    padding-right: 20px;
+
+}
+
+.userprofile:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Styles */
+footer {
+    padding: 20px 0;
+}
+
+.footcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.socialmedia {
+    margin-bottom: 10px;
+}
+
+.socialmedia a {
+    margin-right: 10px;
+}
+.socialmedia a img {
+    width: 20px;
+    height: 20px;
+
+}
+.footerlinks {
+    margin-bottom: 10px;
+}
+
+.footerlinks a {
+    color: black;
+    text-decoration: none;
+}
+
+.footerlinks a:hover {
+    text-decoration: underline;
+}
+
+.footertext {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footertext p {
+    margin: 0;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .socialmedia {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+

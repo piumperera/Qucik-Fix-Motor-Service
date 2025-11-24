@@ -1,0 +1,47 @@
+body{
+    background-color: #2B9BFF;
+    ;
+}
+.registerbox{
+    text-align: center;
+    background-color:white;  
+    margin: 200px auto;
+    border: 2px solid #ccc; 
+    border-radius: 5px; 
+    padding: 50px; 
+    width: 400px;
+}
+.registerbox-buttons{
+    display: flex;
+    flex-direction: column;
+}
+.registerbox-buttons button{
+    color: #fff;
+    background: #07a0f8;
+    margin-top: 1.7rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    height: 60px;
+    width: 100%;
+    padding: 0 15px;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+}
+.registerbox-buttons button:hover{
+    transition: 0.4s;
+    background: #1677cc;
+}
+.registerbox-footer{
+    font-size: 20px;
+}
+.registerbox-footer a{
+    text-decoration: none;
+    color: #2B9BFF;
+    cursor: pointer;
+}
+a:hover{
+    text-decoration: underline;
+}

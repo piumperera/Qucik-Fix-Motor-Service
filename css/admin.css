@@ -1,0 +1,41 @@
+.admin-container{
+    padding: 50px 50px;
+}
+.admin-container-content-user-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.admin-container-content-worker{
+    width: 100%;
+    height: auto;
+    
+    
+}
+.admin-container-content-user-details{
+    padding-bottom: 40px;
+}
+.admin-container-content-section1{
+    margin-top: 20px;
+    background-color: rgba(165, 207, 245, 0.89);
+    border-radius: 10px;
+}
+.user-register-btns button{
+    border: 0 solid black;
+    width: 50%;
+    padding: 20px 10px;
+    color: white;
+    border-radius: 5px;
+}
+.user-register-dltbtn button{
+    margin-top: 10px;
+    background-color: rgb(223, 80, 37);
+}
+.user-register-svbtn button{
+    background-color: #07a0f8;
+    margin-bottom: 10px;
+    
+}
+

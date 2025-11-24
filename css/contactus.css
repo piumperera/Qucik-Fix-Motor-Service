@@ -1,0 +1,64 @@
+.contact-us-methods-icon{
+    width: 20px;
+    height: 20px;
+}
+.contact-us-methods-all {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+
+.contact-us-methods {
+    margin-right: 20px;
+}
+
+.contact-us-methods-location {
+    display: flex;
+    align-items: center;
+}
+
+.contact-us-methods-icon {
+    width: 24px; /* Adjust as needed */
+    height: 24px; /* Adjust as needed */
+    margin-right: 5px; /* Adjust as needed */
+}
+.contact-us-header h1{
+    text-align: center;
+
+}
+.contact-us-content{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 30px;
+}
+.contact-us-textarea-top{
+    padding-top: 10px;
+
+}
+.contact-us-textarea-top input{
+    margin-block:20px ;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+.contact-us-textarea-bottom{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+.contact-us-textarea-bottom button{
+    background-color: #07a0f8;
+    border: 0 solid black;
+    width: 100%;
+    padding: 20px 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+#message{
+    padding-bottom: 10px;
+}    
+.contact-us-textarea-bottom-button{
+        margin-top: 10PX;
+}

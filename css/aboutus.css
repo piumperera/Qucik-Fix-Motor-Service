@@ -1,0 +1,21 @@
+
+.abtus-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(5, 149, 233);
+    margin-left: 10em;
+    margin-right: 100px;
+    border-radius: 20px;
+    color: white;
+    height: 50em;
+    
+}
+.aboutus-content-section1{
+    padding: 30px 30px;
+}
+.aboutus-content-section1-description p{
+    font-size: 30px;
+    font-weight: 100;
+}

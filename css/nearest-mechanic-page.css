@@ -1,0 +1,53 @@
+.nearest-mechanic-container{
+    text-align: center;
+    background-color:white;  
+    border: 2px solid #ccc; 
+    border-radius: 5px; 
+    padding: 50px; 
+    width: auto;
+}
+
+.nearest-mechanic-container-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.nearest-mechanic-container-left{
+    margin: 20px 20px;
+    
+}
+.nearest-mechanic-container-right{
+    margin-right: 50px;
+    margin-left: 70px;
+    
+}
+.nearest-mechanic-container-descrip{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    height: 50px;
+    width: 50em;
+    border-radius: 5px;
+    size: 80px;
+    letter-spacing: 2px;
+    
+}
+button{
+    /* padding: 50px 10px 0 50px; */
+    cursor: pointer;
+    width: 30em ;
+    height: 40px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+
+}
+button:hover{
+    transition: 0.4s;
+    background: #1677cc;
+}

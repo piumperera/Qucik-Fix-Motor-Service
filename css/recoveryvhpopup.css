@@ -1,0 +1,11 @@
+.rv-popup-content{
+    text-align: center;
+    height: 5em;
+}
+.rv-popup-content-hdimg img{
+    width: 200px;
+    height: 200px;
+}
+.rv-popup-buttons button{
+    width: 100px;
+}

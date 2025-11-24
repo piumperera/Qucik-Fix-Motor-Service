@@ -1,0 +1,266 @@
+/* image slider */
+
+.slider{
+    height: 100vh;
+    margin-top: -50px;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider .sliderlist .slideritem{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0 0 0 0;
+}
+.slider .sliderlist .slideritem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider .sliderlist .slideritem .slidercontent{
+    position: absolute;
+    top: 20%;
+    width: 1140px;
+    max-width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-right: 30%;
+    box-sizing: border-box;
+    color: #fff;
+    text-shadow: 0 5px 10px #0004;
+}
+.slider .sliderlist .slideritem .slidercontent .slidertitle,
+.slider .sliderlist .slideritem .slidercontent .slidertype{
+    font-size: 5em;
+    font-weight: bold;
+    line-height: 1.3em;
+}
+.sliderslider .sliderlist .slideritem .slidertype{
+    color: #14ff72cb;
+}
+.slider .sliderlist .slideritem .sliderbutton{
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: 40px;
+    gap: 5px;
+    margin-top: 20px;
+}
+.slider .sliderlist .slideritem .sliderbutton button{
+    border: none;
+    background-color: #eee;
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.4s;
+    letter-spacing: 2px;
+}
+
+
+.slider .sliderlist .slideritem .sliderbutton button:hover{
+    letter-spacing: 3px;
+}
+.slider .sliderlist .slideritem .sliderbutton button:nth-child(2){
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #eee;
+}
+
+/* Thumbnail */
+.sliderthumbnail{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: max-content;
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+}
+
+.sliderthumbnail .slideritem{
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.sliderthumbnail .slideritem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* nextPrevArrows Section  */
+.slidernextPrevArrows{
+    position: absolute;
+    top: 80%;
+    right: 52%;
+    z-index: 100;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.slidernextPrevArrows button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #14ff72cb;
+    border: none;
+    color: #fff;
+    font-family: monospace;
+    font-weight: bold;
+    transition: .5s;
+    cursor: pointer;
+}
+.slidernextPrevArrows button:hover{
+    background-color: #fff;
+    color: #000;
+
+}
+
+/* Animation Part */
+.slider .sliderlist .slideritem:nth-child(1){
+    z-index: 1;
+}
+/* animation text in first slideritem */
+.slider .sliderlist .slideritem:nth-child(1) .slidercontent .slidertitle,
+.slider .sliderlist .slideritem:nth-child(1) .slidercontent .slidertype,
+.slider .sliderlist .slideritem:nth-child(1) .slidercontent .sliderdescription,
+.slider .sliderlist .slideritem:nth-child(1) .slidercontent .sliderbuttons
+{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent .5s 1s linear 1 forwards;
+}
+@keyframes showContent{
+    to{
+        transform: translateY(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+.slider .sliderlist .slideritem:nth-child(1) .slidercontent .slidertitle{
+    animation-delay: 0.4s !important;
+}
+.slider .sliderlist .slideritem:nth-child(1) .slidercontent .slidertype{
+    animation-delay: 0.6s !important;
+}
+.slider .sliderlist .slideritem:nth-child(1) .slidercontent .sliderdescription{
+    animation-delay: 0.8s !important;
+}
+.slider .sliderlist .slideritem:nth-child(1) .slidercontent .sliderbuttons{
+    animation-delay: 1s !important;
+}
+
+
+
+
+/* Animation for next button click */
+.slider.next .sliderlist .slideritem:nth-child(1) img{
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    border-radius: 30px;
+    animation: showImage .5s linear 1 forwards;
+}
+
+@keyframes showImage{
+    to{
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
+.slider.next .sliderthumbnail .slideritem:nth-last-child(1){
+    overflow: hidden;
+    animation: showThumbnail .5s linear 1 forwards;
+}
+.slider.sliderprev .sliderlist .slideritem img{
+    z-index: 100;
+}
+
+
+@keyframes showThumbnail{
+    from{
+        width: 0;
+        opacity: 0;
+    }
+}
+
+
+.slider.slidernext .sliderthumbnail{
+    animation: effectNext .5s linear 1 forwards;
+}
+
+@keyframes effectNext{
+    from{
+        transform: translateX(150px);
+    }
+}
+
+/* Animation for sliderprev button click */
+.slider.sliderprev .sliderlist .slideritem:nth-child(2){
+    z-index: 2;
+}
+
+.slider.sliderprev .sliderlist .slideritem:nth-child(2) img{
+    animation: outFrame 0.5s linear 1 forwards;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+@keyframes outFrame{
+    to{
+        width: 150px;
+        height: 220px;
+        bottom: 50px;
+        left: 50%;
+        border-radius: 20px;
+    }
+}
+
+.slider.sliderprev .sliderthumbnail .slideritem:nth-child(1){
+    overflow: hidden;
+    opacity: 0;
+    animation: showThumbnail .5s linear 1 forwards;
+}
+.slider.slidernext .slidernextPrevArrows button,
+.slider.sliderprev .slidernextPrevArrows button{
+    pointer-events: none;
+}
+
+.slider.sliderprev .sliderlist .slideritem:nth-child(2) .slidercontent .slidertitle,
+.slider.sliderprev .sliderlist .slideritem:nth-child(2) .slidercontent .slidertype,
+.slider.sliderprev .sliderlist .slideritem:nth-child(2) .slidercontent .sliderdescription,
+.slider.sliderprev .sliderlist .slideritem:nth-child(2) .slidercontent .sliderbuttons
+{
+    animation: contentOut 1.5s linear 1 forwards!important;
+}
+
+@keyframes contentOut{
+    to{
+        transform: translateY(-150px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+@media screen and (max-width: 678px) {
+    .slider .sliderlist .slideritem .slidercontent{
+        padding-right: 0;
+    }
+    .slider .sliderlist .slideritem .slidercontent .slidertitle{
+        font-size: 50px;
+    }
+}

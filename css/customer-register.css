@@ -1,0 +1,26 @@
+.customer-register-details-txtbox-line{
+    display: flex;
+}
+.customer-register-details-txtbox-line input{
+    width: 100%;
+    margin-block:10px;
+    padding: 0.375rem 0.75rem;
+    margin: 10px 10px 10px 10px;
+}
+.customer-register-btn button{
+    background-color: #07a0f8;
+    border: 0 solid black;
+    width: 100%;
+    padding: 20px 10px;
+    color: white;
+    border-radius: 5px;
+}
+.customer-register-container{
+    background-color: rgba(87, 194, 226, 0.295);
+    text-align: center; 
+    margin: 20px auto;
+    border: 2px solid #ccc; 
+    border-radius: 5px; 
+    padding: 50px; 
+    width: 40em;
+}

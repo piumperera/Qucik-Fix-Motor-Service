@@ -1,0 +1,80 @@
+h1{
+    margin-left: 20px;
+}
+.mechanic-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+textarea{
+    height: 10em;
+    width: auto;
+}
+
+
+/* popup */
+
+.mechanic-popup1{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 9999;
+    overflow-y: auto;
+}
+.mechanic-popup{
+    background-color: rgb(245, 245, 245);
+    width: 60%;
+    height: auto;
+    /* max-width: 600px; */
+    margin: 100px auto; /* Center the popup vertically and horizontally */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow-y: auto;
+}
+.close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+.close:hover {
+    color: red;
+}
+
+
+/* responsive */
+
+/* Base styles */
+.rv-popup1 {
+    background-color: rgb(245, 245, 245);
+    width: 80%; /* Adjust the width percentage as needed */
+    height: auto; /* Adjust the height to auto for responsiveness */
+    max-width: 600px;
+    margin: 10% auto; /* Center the popup vertically and horizontally */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow-y: auto;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .rv-popup1 {
+        width: 90%; /* Adjust the width percentage for smaller screens */
+        max-width: none; /* Remove the max-width restriction for smaller screens */
+        margin: 10% auto; /* Adjust margin for smaller screens */
+    }
+}
+
+body {
+    background-image: url(./img/24hour.jpg);
+}

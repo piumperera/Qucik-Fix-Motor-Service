@@ -1,0 +1,31 @@
+.reports-container-items{
+    text-align: center;
+    margin: 10em 20px 10em 20px;
+}
+.reports-container-textboxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reports-container-textboxes-slectbox select{
+    width: 40em;
+    height: 50px;
+}
+.reports-container-textboxes-slectbox{
+    margin-left: 10px;
+}
+.reports-container-textboxes-button{
+    padding-top: 1em;
+}
+button{
+    margin-top: 2em;
+    height: 3em;
+    width:15em;
+    background-color: #2B9BFF;
+    color: white;
+}
+button:hover{
+    text-decoration: none;
+    color: #2B9BFF;
+    cursor: pointer;
+}
